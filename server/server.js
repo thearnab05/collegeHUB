@@ -15,8 +15,9 @@ mongoose
     .then(() => console.log("MongoDB Connected"))
     .catch((err) => console.log(err));
 
+// Root endpoint for health check
 app.get("/", (req, res) => {
-    res.send("CollegeHUB Backend Running 🚀");
+    res.send("CollegeHUB API Backend is Running 🚀");
 });
 
 const PORT = process.env.PORT || 5000;
